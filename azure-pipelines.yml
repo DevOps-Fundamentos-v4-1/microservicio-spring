@@ -25,6 +25,7 @@ steps:
   inputs:
     SonarCloud: 'SonarCloud'
     organization: 'devops-fundamentos-v4-1'
+    projectKey: 'DevOps-Fundamentos-v4-1_microservicio-spring'
     scannerMode: 'Other'
 - task: SonarCloudAnalyze@1
 - task: JMeterInstaller@0
