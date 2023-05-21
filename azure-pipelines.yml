@@ -21,3 +21,9 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'SonarCloud'
+    organization: 'devops-fundamentos-v4-1'
+    scannerMode: 'Other'
+- task: SonarCloudAnalyze@1
