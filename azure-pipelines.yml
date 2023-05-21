@@ -3,8 +3,8 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
-#trigger:
-#- feature-ms-AndresVillalobos-mensaje
+trigger:
+- feature-ms-AndresVillalobos-mensaje
 
 pool:
   vmImage: ubuntu-latest
@@ -28,6 +28,7 @@ steps:
     projectKey: 'DevOps-Fundamentos-v4-1_microservicio-spring'
     scannerMode: 'Other'
 - task: SonarCloudAnalyze@1
+- task: SonarQubeAnalyze@5
 - task: JMeterInstaller@0
   inputs:
     jmeterVersion: '5.4.2'
