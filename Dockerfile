@@ -1,2 +1,2 @@
-DESDE alpino
-CMD ["/bin/sh", "-c", "echo '¡Funciona!'"]
+FROM alpine
+CMD ["/bin/sh", "-c", "echo 'It works!'"]
